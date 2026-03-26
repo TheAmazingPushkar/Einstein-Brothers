@@ -16,7 +16,7 @@
 
 <br/>
 
-[📖 About](#-about) • [🚀 Getting Started](#-getting-started) • [📁 Project Structure](#-project-structure) • [👥 Team](#-team) • [🤝 Contributing](#-contributing-guidelines) • [📄 License](#-license)
+[📖 About](#-about) • [👥 Team](#-team) • [🤝 Contributing](#-contributing-guidelines) • [📄 License](#-license)
 
 </div>
 
@@ -37,77 +37,14 @@
 ---
 
 ## 🚀 Getting Started
+just upskill and ace it guys
 
-### Prerequisites
 
-Make sure you have the following installed:
 
-- Python 3.9 or higher
-- pip (Python package manager)
-- Git
 
-### Installation
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/TheAmazingPushkar/Einstein-Brothers.git
-cd Einstein-Brothers
 
-# 2. Create a virtual environment
-python -m venv venv
-source venv/bin/activate        # On Windows: venv\Scripts\activate
 
-# 3. Install required dependencies
-pip install -r requirements.txt
-```
-
-### Usage
-
-```bash
-# Run the classification on a single image
-python classify.py --image path/to/your/image.jpg
-
-# Launch the interactive demo
-python app.py
-```
-
-> **Note:** Pre-trained model weights should be placed in the `models/` directory. See [Project Structure](#-project-structure) for details.
-
----
-
-## 📁 Project Structure
-
-```
-Einstein-Brothers/
-│
-├── 📂 data/                    # Dataset directory
-│   ├── train/                  # Training images (organized by class)
-│   ├── val/                    # Validation images
-│   └── test/                   # Test images
-│
-├── 📂 models/                  # Saved model weights & architectures
-│   └── best_model.h5
-│
-├── 📂 notebooks/               # Jupyter notebooks for EDA & experiments
-│   ├── EDA.ipynb
-│   └── model_training.ipynb
-│
-├── 📂 src/                     # Core source code
-│   ├── dataset.py              # Dataset loading & preprocessing
-│   ├── model.py                # CNN model definition
-│   ├── train.py                # Training pipeline
-│   └── evaluate.py             # Evaluation & metrics
-│
-├── 📂 tests/                   # Unit & integration tests
-│
-├── app.py                      # Interactive demo application
-├── classify.py                 # CLI classification script
-├── requirements.txt            # Python dependencies
-├── LICENSE
-└── README.md
-```
-
----
 
 ## 👥 Team
 
@@ -115,12 +52,12 @@ Einstein-Brothers/
 
 | Avatar | Name | Role | GitHub |
 |:------:|:----:|:----:|:------:|
-| 🧑‍💻 | **Yashmith** | Model Architecture & Training | *update with GitHub username* |
-| 🧑‍💻 | **Pushkar** | Project Lead & Backend | [@TheAmazingPushkar](https://github.com/TheAmazingPushkar) |
-| 🧑‍💻 | **Satvik** | Data Collection & Preprocessing | *update with GitHub username* |
-| 🧑‍💻 | **Harsha** | Model Evaluation & Testing | *update with GitHub username* |
-| 🧑‍💻 | **Puneeth** | UI / Demo Application | *update with GitHub username* |
-| 🧑‍💻 | **Mallikarjun** | Documentation & Research | *update with GitHub username* |
+| 🧑‍💻 | **Yashmith** | ML Engineer| *update with GitHub username* |
+| 🧑‍💻 | **Pushkar** | Project Lead & Backend & ML Engineer| [@TheAmazingPushkar](https://github.com/TheAmazingPushkar) |
+| 🧑‍💻 | **Satvik** | ML Engineer & Data Scientist| *update with GitHub username* |
+| 🧑‍💻 | **Harsha** | Model Evaluation & Testing & Frontend Developer| *update with GitHub username* |
+| 🧑‍💻 | **Puneeth** | UI Developer & Frontend Architect| *update with GitHub username* |
+| 🧑‍💻 | **Mallikarjun** | i wonder| *update with GitHub username* |
 
 </div>
 
@@ -141,33 +78,9 @@ docs/<your-name>/<short-description>        # For documentation updates
 experiment/<your-name>/<short-description>  # For experiments
 ```
 
-**Example:**
-```bash
-git checkout -b feature/pushkar/add-cnn-model
-```
 
-### 🔄 Workflow
 
-1. **Sync your fork / branch** before starting work:
-   ```bash
-   git fetch origin
-   git checkout main
-   git pull origin main
-   git checkout -b feature/<your-name>/<description>
-   ```
 
-2. **Make focused commits** — one logical change per commit:
-   ```bash
-   git add .
-   git commit -m "feat: add ResNet50 backbone for feature extraction"
-   ```
-
-3. **Push your branch** and open a Pull Request:
-   ```bash
-   git push origin feature/<your-name>/<description>
-   ```
-
-4. **Open a Pull Request** on GitHub targeting the `main` branch.
 
 ### ✅ Pull Request Rules
 
@@ -178,26 +91,9 @@ git checkout -b feature/pushkar/add-cnn-model
 - [ ] No merge conflicts — resolve them before requesting review
 - [ ] Link any related issue in the PR description
 
-### 📝 Commit Message Format
 
-Follow the [Conventional Commits](https://www.conventionalcommits.org/) style:
 
-| Prefix | When to use |
-|--------|-------------|
-| `feat:` | Adding a new feature |
-| `fix:` | Fixing a bug |
-| `docs:` | Documentation changes |
-| `style:` | Code formatting (no logic change) |
-| `refactor:` | Code restructuring |
-| `test:` | Adding or updating tests |
-| `chore:` | Build/config changes |
 
-**Examples:**
-```
-feat: add data augmentation pipeline
-fix: resolve image normalization bug
-docs: update installation instructions
-```
 
 ### 🚫 Rules to Follow
 
@@ -220,18 +116,7 @@ If you find a bug or have a suggestion:
 
 ---
 
-## 📊 Model Performance
 
-| Metric | Value |
-|--------|-------|
-| Training Accuracy | *TBD* |
-| Validation Accuracy | *TBD* |
-| Test Accuracy | *TBD* |
-| Inference Time | *TBD* |
-
-> Results will be updated as the project progresses.
-
----
 
 ## 🛠️ Tech Stack
 
@@ -239,13 +124,12 @@ If you find a bug or have a suggestion:
 
 | Category | Tools / Libraries |
 |----------|------------------|
-| Language | Python 3.9+ |
-| Deep Learning | TensorFlow / Keras |
+| Language | Python |
+| Deep Learning | TensorFlow |
 | Data Handling | NumPy, Pandas |
-| Visualization | Matplotlib, Seaborn |
-| Image Processing | OpenCV, Pillow |
-| Experiment Tracking | *TBD* |
-| Deployment | Flask / Streamlit |
+| Deployment | Github |
+| Backend | Django |
+| Frontend | HTML & CSS |
 
 </div>
 
