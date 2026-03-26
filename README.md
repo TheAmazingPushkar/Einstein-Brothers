@@ -28,7 +28,7 @@
 
 ### 🎯 Key Features
 
-- 🔍 **Multi-class animal classification** — Identify dozens of animal species from a single image
+- 🔍 **animal classification** — Identify animal species from a single image
 - ⚡ **Fast inference** — Optimized model for real-time predictions
 - 📊 **High accuracy** — Trained on large-scale annotated datasets
 - 🌐 **Easy-to-use interface** — Simple API and interactive demo
@@ -116,7 +116,7 @@ Einstein-Brothers/
 | Avatar | Name | Role | GitHub |
 |:------:|:----:|:----:|:------:|
 | 🧑‍💻 | **Yashmith** | Model Architecture & Training | *update with GitHub username* |
-| 🧑‍💻 | **Pushkar** | Project Lead & Integration | [@TheAmazingPushkar](https://github.com/TheAmazingPushkar) |
+| 🧑‍💻 | **Pushkar** | Project Lead & Backend | [@TheAmazingPushkar](https://github.com/TheAmazingPushkar) |
 | 🧑‍💻 | **Satvik** | Data Collection & Preprocessing | *update with GitHub username* |
 | 🧑‍💻 | **Harsha** | Model Evaluation & Testing | *update with GitHub username* |
 | 🧑‍💻 | **Puneeth** | UI / Demo Application | *update with GitHub username* |
@@ -261,7 +261,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 Made with ❤️ by the **Einstein Brothers** team
 
-*PES University — Second Semester Interdisciplinary Project, 2024*
+*RNSIT University — Second Semester Interdisciplinary Project, 2026*
 
 ⭐ If you find this project helpful, please give it a star!
 
