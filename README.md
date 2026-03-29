@@ -56,7 +56,7 @@ just upskill and ace it guys
 | 🧑‍💻 | **Pushkar** | Project Lead & Backend & ML Engineer| [@TheAmazingPushkar](https://github.com/TheAmazingPushkar) |
 | 🧑‍💻 | **Satvik** | ML Engineer & Data Scientist| *update with GitHub username* |
 | 🧑‍💻 | **Harsha** | Model Evaluation & Testing & Frontend Developer| *update with GitHub username* |
-| 🧑‍💻 | **Puneeth** | UI Developer & Frontend Architect| [@punipuneethn7-debug] (https://github.com/punipuneethn7-debug) |
+| 🧑‍💻 | **Puneeth** | UI Developer & Frontend Architect| [@punipuneethn7-debug](https://github.com/punipuneethn7-debug) |
 | 🧑‍💻 | **Mallikarjun** | i wonder| *update with GitHub username* |
 
 </div>
