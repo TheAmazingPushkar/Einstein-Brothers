@@ -52,7 +52,7 @@ just upskill and ace it guys
 
 | Avatar | Name | Role | GitHub |
 |:------:|:----:|:----:|:------:|
-| 🧑‍💻 | **Yashmith** | ML Engineer| *update with GitHub username* |
+| 🧑‍💻 | **Yashmith** | ML Engineer| [@yashmit29](https://github.com/yashmit29)  |
 | 🧑‍💻 | **Pushkar** | Project Lead & Backend & ML Engineer| [@TheAmazingPushkar](https://github.com/TheAmazingPushkar) |
 | 🧑‍💻 | **Satvik** | ML Engineer & Data Scientist| *randomprogrammer-ai* |
 | 🧑‍💻 | **Harsha** | Model Evaluation & Testing & Frontend Developer| *update with GitHub username* |
