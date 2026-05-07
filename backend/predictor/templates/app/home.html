@@ -1,9 +1,43 @@
 {% extends 'app/base.html' %}
 
-{% block title %}Home | Django Auth Site{% endblock %}
+{% block title %}Dashboard - Einstein Brothers{% endblock %}
 
 {% block content %}
-    <h1>Home Dashboard</h1>
-    <p>Welcome, {{ request.user.username }}! You have successfully logged in.</p>
-    <p>This page is accessible only after a successful login.</p>
+    <div style="padding: 2rem 0;">
+        <h1 style="color: white; text-align: center; margin-bottom: 1rem; font-weight: 300;">Welcome back, {{ request.user.username }}!</h1>
+        <p style="color: white; text-align: center; opacity: 0.9; margin-bottom: 3rem;">Ready to explore the power of AI image prediction?</p>
+
+        <div class="dashboard">
+            <div class="dashboard-card">
+                <h3>📊 Prediction History</h3>
+                <p>View your previous image predictions and results.</p>
+                <a href="#" class="btn" style="margin-top: 1rem;">View History</a>
+            </div>
+            <div class="dashboard-card">
+                <h3>🖼️ New Prediction</h3>
+                <p>Upload a new image and get AI-powered predictions instantly.</p>
+                <a href="#" class="btn" style="margin-top: 1rem;">Upload Image</a>
+            </div>
+            <div class="dashboard-card">
+                <h3>⚙️ Settings</h3>
+                <p>Manage your account settings and preferences.</p>
+                <a href="#" class="btn" style="margin-top: 1rem;">Account Settings</a>
+            </div>
+            <div class="dashboard-card">
+                <h3>📈 Analytics</h3>
+                <p>View detailed analytics of your prediction usage and performance.</p>
+                <a href="#" class="btn" style="margin-top: 1rem;">View Analytics</a>
+            </div>
+            <div class="dashboard-card">
+                <h3>🆘 Help & Support</h3>
+                <p>Get help with using Einstein Brothers or contact support.</p>
+                <a href="#" class="btn" style="margin-top: 1rem;">Get Help</a>
+            </div>
+            <div class="dashboard-card">
+                <h3>📚 API Documentation</h3>
+                <p>Access our API documentation for developers.</p>
+                <a href="#" class="btn" style="margin-top: 1rem;">View Docs</a>
+            </div>
+        </div>
+    </div>
 {% endblock %}

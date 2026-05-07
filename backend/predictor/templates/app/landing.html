@@ -1,13 +1,43 @@
 {% extends 'app/base.html' %}
 
-{% block title %}Welcome | Django Auth Site{% endblock %}
+{% block title %}Welcome to Einstein Brothers - AI Image Prediction{% endblock %}
 
 {% block content %}
-    <h1>Welcome to Einstein Brothers</h1>
-    <p>Get image prediction help by logging in or signing up.</p>
-    <p>
-        <a href="{% url 'login' %}">Log in</a>
-        or
-        <a href="{% url 'signup' %}">Sign up</a>
-    </p>
+    <section class="hero">
+        <h1>Unlock the Power of AI Image Prediction</h1>
+        <p>Experience cutting-edge machine learning technology with Einstein Brothers. Get accurate predictions for your images with our advanced AI models.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="{% url 'signup' %}" class="btn">Get Started</a>
+            <a href="#features" class="btn btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <section id="features" style="padding: 4rem 0;">
+        <h2 style="text-align: center; color: white; margin-bottom: 3rem; font-weight: 300;">Why Choose Einstein Brothers?</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="card" style="text-align: center;">
+                <h3 style="color: #4285f4; margin-bottom: 1rem;">🚀 Advanced AI Models</h3>
+                <p>Powered by state-of-the-art machine learning algorithms trained on vast datasets for unparalleled accuracy.</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h3 style="color: #4285f4; margin-bottom: 1rem;">⚡ Real-time Predictions</h3>
+                <p>Get instant results with our optimized prediction engine. Upload and analyze images in seconds.</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h3 style="color: #4285f4; margin-bottom: 1rem;">🔒 Secure & Private</h3>
+                <p>Your images and data are protected with enterprise-grade security. We prioritize your privacy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 4rem 0; text-align: center;">
+        <div class="card" style="max-width: 600px; margin: 0 auto;">
+            <h2 style="color: #4285f4; margin-bottom: 1rem;">Ready to Get Started?</h2>
+            <p>Join thousands of users who trust Einstein Brothers for their AI image prediction needs.</p>
+            <div style="margin-top: 2rem;">
+                <a href="{% url 'signup' %}" class="btn" style="margin-right: 1rem;">Create Account</a>
+                <a href="{% url 'login' %}" class="btn btn-secondary">Sign In</a>
+            </div>
+        </div>
+    </section>
 {% endblock %}
