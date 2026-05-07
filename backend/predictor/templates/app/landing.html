@@ -1,9 +1,13 @@
 {% extends 'app/base.html' %}
 
-{% block title %}Home | Django Auth Site{% endblock %}
+{% block title %}Welcome | Django Auth Site{% endblock %}
 
 {% block content %}
-    <h1>Image Prediction</h1>
-    <p>Upload an image to get a prediction.</p>
-
+    <h1>Welcome to Einstein Brothers</h1>
+    <p>Get image prediction help by logging in or signing up.</p>
+    <p>
+        <a href="{% url 'login' %}">Log in</a>
+        or
+        <a href="{% url 'signup' %}">Sign up</a>
+    </p>
 {% endblock %}

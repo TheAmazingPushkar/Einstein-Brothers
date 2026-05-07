@@ -53,3 +53,7 @@ def logout_view(request):
     logout(request)
     messages.info(request, 'You have been logged out.')
     return redirect('landing')
+
+@login_required
+def home(request):
+    return render(request, 'app/home.html')
