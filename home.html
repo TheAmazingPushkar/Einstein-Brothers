@@ -27,6 +27,12 @@
         <section id="resultArea" class="result-card" style="display:none;">
             <h4>Result: <span id="label">--</span></h4>
             <p>Confidence: <span id="confidence">0</span>%</p>
+            <!-- This is the new part for Frontend 3 -->
+    <div class="heatmap-container">
+        <h5>AI Focus Map (Grad-CAM):</h5>
+        <img id="heatmapDisplay" src="" style="width: 100%; border-radius: 8px; border: 2px solid #ddd;">
+        <p><small>Red areas show where the AI focused to make its decision.</small></p>
+    </div>
         </section>
     </main>
 
@@ -76,6 +82,25 @@
                 btn.innerText = "Analyze Animal";
                 btn.disabled = false;
             }
+            try {
+            const response = await fetch(API_URL, {
+            method: "POST",
+            body: formData
+            });
+            const data = await response.json();
+            // 1. Show the result card
+            document.getElementById('resultArea').style.display = 'block';
+            // 2. Set the text results
+            document.getElementById('label').innerText = data.class;
+            document.getElementById('confidence').innerText = data.confidence;
+            // 3. SET THE HEATMAP IMAGE (The "Frontend 3" Core)
+            const heatmapImg = document.getElementById('heatmapDisplay');
+            heatmapImg.src = data.heatmap; // This is the Base64 string from FastAPI
+            } catch (error) {
+            console.error("Error:", error);
+            alert("Failed to connect to the AI model.");
+        }
+
         }
 
         async function signOut() {
