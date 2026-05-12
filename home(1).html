@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cattle AI Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Load Supabase Library First -->
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
@@ -28,16 +27,20 @@
         <section id="resultArea" class="result-card" style="display:none;">
             <h4>Result: <span id="label">--</span></h4>
             <p>Confidence: <span id="confidence">0</span>%</p>
-            
-            <div class="heatmap-container" id="heatmapContainer" style="display:none;">
-                <h5>AI Focus Map (Grad-CAM):</h5>
-                <img id="heatmapDisplay" src="" style="width: 100%; border-radius: 8px; border: 2px solid #ddd;">
-                <p><small>Red areas show where the AI focused to make its decision.</small></p>
-            </div>
+            <!-- This is the new part for Frontend 3 -->
+    <div class="heatmap-container">
+        <h5>AI Focus Map (Grad-CAM):</h5>
+        <img id="heatmapDisplay" src="" style="width: 100%; border-radius: 8px; border: 2px solid #ddd;">
+        <p><small>Red areas show where the AI focused to make its decision.</small></p>
+    </div>
         </section>
     </main>
 
     <script>
+    // 1. Fix naming conflict (Use 'sb' instead of 'supabase')
+   
+
+    // 2. Add /predict to your URL
     const API_URL = "https://test-deployment-j9e4.onrender.com/predict";
 
     function previewImage(event) {
@@ -79,20 +82,13 @@
             document.getElementById('label').innerText = data.class;
             document.getElementById('confidence').innerText = data.confidence;
             
-            // Safety Check: Only show heatmap if data exists to avoid /null 404
+            // Display Heatmap
             const heatmapImg = document.getElementById('heatmapDisplay');
-            const heatmapCont = document.getElementById('heatmapContainer');
-            
-            if (data.heatmap) {
-                heatmapImg.src = data.heatmap; 
-                heatmapCont.style.display = 'block';
-            } else {
-                heatmapCont.style.display = 'none';
-            }
+            heatmapImg.src = data.heatmap; 
             
         } catch (error) {
             console.error("Error:", error);
-            alert("Connection error. Ensure your Render backend is awake (it may take 1 min to start).");
+            alert("Failed to connect to the AI model. Ensure your Render backend is awake.");
         } finally {
             btn.innerText = "Analyze Animal";
             btn.disabled = false;
@@ -100,15 +96,13 @@
     }
 
     async function signOut() {
-        // Ensure supabaseClient is defined in supabase-client.js
-        if (typeof supabaseClient !== 'undefined') {
-            await supabaseClient.auth.signOut();
-            window.location.href = "index.html";
-        }
+        // Use the renamed 'sb' client here too
+        await supabaseClient.auth.signOut();
+        window.location.href = "index.html";
     }
-    </script>
-
-    <!-- Custom Files (Loaded after the Supabase library) -->
+</script>
+     <!-- Import our custom JS files -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="supabase-client.js"></script>
     <script src="auth.js"></script>
 </body>
