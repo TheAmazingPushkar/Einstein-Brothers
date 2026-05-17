@@ -124,11 +124,11 @@ If you find a bug or have a suggestion:
 
 | Category | Tools / Libraries |
 |----------|------------------|
-| Language | Python |
+| Language | Python, Javascript |
 | Deep Learning | TensorFlow |
 | Data Handling | NumPy, Pandas |
-| Deployment | Github |
-| Backend | Django |
+| Deployment | Render and Netlify |
+| Backend | FastApi |
 | Frontend | HTML & CSS |
 
 </div>
